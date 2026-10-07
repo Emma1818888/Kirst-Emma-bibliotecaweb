@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar un libro</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            BIBLIOTECA<br>
+            <span>EL RINCÓN DE LOS LIBROS</span>
+        </div>
+
+        <a href="Biblioteca.html" class="boton-inicio">
+            INICIO
+        </a>
+    </header>
+
+    <div class="formulario-contenedor">
+
+        <h1>Solicitar un libro</h1>
+
+        <p>Completá todos los campos para solicitar un libro de nuestra biblioteca</p>
+
+
+        <form action="#" method="POST" id="solicitudForm">
+
+            <fieldset>
+
+                <legend>Datos personales</legend>
+
+                <div>
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre"
+                        placeholder="Ej: Emma Kirst" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Ej: emma@correo.com" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono"
+                        placeholder="Ej: +54 11 1234-5678">
+                </div>
+
+                <div>
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Información del libro</legend>
+
+                <div>
+                    <label for="libro">Nombre del libro *</label>
+                    <input type="text" id="libro" name="libro"
+                        placeholder="Ej: Harry Potter y la piedra filosofal" required>
+                </div>
+
+                <div>
+                    <label for="autor">Autor *</label>
+                    <input type="text" id="autor" name="autor"
+                        placeholder="Ej: J. K. Rowling" required>
+                </div>
+
+                <div>
+                    <label for="categoria">Categoría *</label>
+
+                    <select id="categoria" name="categoria" required>
+
+                        <option value="">Seleccioná una categoría...</option>
+                        <option value="novela">Novela</option>
+                        <option value="ciencia-ficcion">Ciencia ficción</option>
+                        <option value="misterio">Misterio</option>
+                        <option value="fantasia">Fantasía</option>
+                        <option value="romance">Romance</option>
+                        <option value="terror">Terror</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="otro">Otro</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label>Formato preferido</label>
+
+                    <div>
+
+                        <label>
+                            <input type="radio" name="formato" value="fisico">
+                            Libro físico
+                        </label>
+
+                        <label>
+                            <input type="radio" name="formato" value="digital">
+                            Libro digital
+                        </label>
+
+                        <label>
+                            <input type="radio" name="formato" value="cualquiera" checked>
+                            Cualquiera
+                        </label>
+
+                    </div>
+                </div>
+
+                <div>
+                    <label>¿Qué tipo de libro buscás?</label>
+
+                    <div>
+
+                        <label>
+                            <input type="checkbox" name="intereses" value="aventura">
+                            Aventura
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="intereses" value="romance">
+                            Romance
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="intereses" value="misterio">
+                            Misterio
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="intereses" value="fantasia">
+                            Fantasía
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="intereses" value="ciencia">
+                            Ciencia ficción
+                        </label>
+
+                    </div>
+                </div>
+
+                <div>
+                    <label for="fecha">¿Para qué fecha te gustaría tenerlo?</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+
+                <div>
+                    <label for="comentarios">Comentarios</label>
+
+                    <textarea id="comentarios" name="comentarios"
+                        rows="4"
+                        placeholder="Escribí algún comentario o información adicional..."></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Preferencias de lectura</legend>
+
+                <div>
+                    <label for="cantidad">¿Cuántos libros leés aproximadamente por mes?</label>
+
+                    <select id="cantidad" name="cantidad">
+
+                        <option value="">Seleccioná una opción...</option>
+                        <option value="1">1 libro</option>
+                        <option value="2-3">2 a 3 libros</option>
+                        <option value="4-5">4 a 5 libros</option>
+                        <option value="6-mas">6 o más libros</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label>¿Cómo preferís leer?</label>
+
+                    <div>
+
+                        <label>
+                            <input type="radio" name="lectura" value="papel">
+                            En papel
+                        </label>
+
+                        <label>
+                            <input type="radio" name="lectura" value="digital">
+                            Digital
+                        </label>
+
+                        <label>
+                            <input type="radio" name="lectura" value="ambos">
+                            Ambos
+                        </label>
+
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <div class="terminos">
+
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los términos y condiciones de la biblioteca *
+                </label>
+
+            </div>
+
+            <div class="botones-formulario">
+
+                <button type="submit">
+                    SOLICITAR LIBRO
+                </button>
+
+                <button type="reset">
+                    LIMPIAR FORMULARIO
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-columna">
+            <h3>Biblioteca</h3>
+            <p>El rincón de los libros</p>
+            <p>Un lugar para descubrir nuevas historias.</p>
+        </div>
+
+        <div class="footer-columna">
+            <h3>Enlaces</h3>
+            <a href="Biblioteca.html">Inicio</a>
+            <a href="Biblioteca.html#categorias">Categorías</a>
+            <a href="formulario.html">Solicitar un libro</a>
+        </div>
+
+        <div class="footer-columna">
+            <h3>Contacto</h3>
+            <p>📧 bibliotecarg@gmail.com</p>
+            <p>📞 11 4567-8900</p>
+        </div>
+
+        <div class="footer-columna">
+            <h3>Proyecto</h3>
+            <p>Emma Kirst</p>
+            <p>2026</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

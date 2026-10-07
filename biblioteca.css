@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1ea;
+    color: #472b20;
+}
+
+header {
+    height: 100px;
+    background-color: #472b20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.logo span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d9b98c;
+}
+
+.banner {
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(40, 25, 18, 0.55),
+        rgba(40, 25, 18, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-contenido {
+    color: white;
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.banner p {
+    font-size: 21px;
+}
+
+.categorias {
+    padding: 60px 7%;
+}
+
+.categorias h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #472b20;
+}
+
+.cajas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.caja {
+    width: 24%;
+    min-height: 310px;
+    background-color: white;
+    padding: 30px 25px;
+    text-align: center;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.caja:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icono {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.caja h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #80533f;
+}
+
+.caja p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.caja button {
+    background-color: #80533f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.caja button:hover {
+    background-color: #472b20;
+}
+
+.solicitud {
+    text-align: center;
+    margin-top: 70px;
+    padding: 45px;
+    background-color: #f1d8b6;
+    border-radius: 15px;
+}
+
+.solicitud h2 {
+    margin-bottom: 10px;
+}
+
+.solicitud p {
+    margin-bottom: 30px;
+}
+
+.boton-formulario {
+    display: inline-block;
+    background-color: #472b20;
+    color: white;
+    text-decoration: none;
+    padding: 20px 45px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-formulario:hover {
+    background-color: #80533f;
+    transform: scale(1.03);
+}
+
+footer { 
+    background-color: #472b20; 
+    color: white; display: flex; 
+    justify-content: space-around; 
+    padding: 45px 7%; 
+    gap: 30px; 
+} 
+
+.footer-columna { 
+    width: 25%; 
+} 
+
+.footer-columna h3 { 
+    margin-bottom: 15px; 
+    color: #d9b98c; 
+} 
+
+.footer-columna p { 
+    margin-bottom: 8px; 
+    line-height: 1.5; 
+} 
+
+.footer-columna a { 
+    display: block; 
+    color: white; 
+    text-decoration: none; 
+    margin-bottom: 8px; 
+} 
+
+.footer-columna a:hover { 
+    color: #d9b98c; 
+}
